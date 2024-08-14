@@ -21,7 +21,7 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 	defer file.Close()
 
 	fileName := filepath.Base(handler.Filename)
-	savePath := filepath.Join("/Users/vickyadrii/Documents/go/src/test-go/test-uploads", fileName)
+	savePath := filepath.Join("/home/kkn_tosale/test-uploads", fileName)
 
 	dst, err := os.Create(savePath)
 	if err != nil {
