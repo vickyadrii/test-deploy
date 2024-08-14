@@ -44,7 +44,7 @@ func uploadFile(w http.ResponseWriter, r *http.Request) {
 
 func serveFile(w http.ResponseWriter, r *http.Request) {
 	// Path ke direktori tempat file-file diunggah
-	filePath := filepath.Join("/Users/vickyadrii/Documents/go/src/test-go/test-uploads", filepath.Base(r.URL.Path))
+	filePath := filepath.Join("/home/kkn_tosale/test-uploads", filepath.Base(r.URL.Path))
 
 	http.ServeFile(w, r, filePath)
 }
